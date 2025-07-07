@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #000;
+    font-family: 'Share Tech Mono', monospace;
+    color: #ff2323;
+    min-height: 100vh;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.overlay {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    z-index: 0;
+    background: repeating-linear-gradient(
+        120deg, 
+        rgba(255,0,0,0.02) 0px, 
+        rgba(255,0,0,0.05) 2px, 
+        transparent 6px, 
+        transparent 12px
+    );
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+    max-width: 720px;
+    margin: 60px auto 0 auto;
+    background: rgba(0,0,0,0.88);
+    border-radius: 24px;
+    box-shadow: 0 0 50px #ff232355;
+    padding: 48px 32px 24px 32px;
+}
+
+header h1 {
+    font-size: 3.5em;
+    letter-spacing: 0.1em;
+    margin: 0;
+    text-shadow: 0 0 12px #ff2323, 0 0 30px #c30000aa;
+    text-align: center;
+}
+
+.subtitle {
+    text-align: center;
+    color: #ff2323;
+    margin-top: 8px;
+    margin-bottom: 36px;
+    font-size: 1.3em;
+    letter-spacing: 0.1em;
+}
+
+.about {
+    font-size: 1.17em;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.anon {
+    color: #fff;
+    background: #ff2323;
+    padding: 2px 8px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-shadow: 0 0 10px #c30000;
+}
+
+.discord-btn {
+    display: inline-block;
+    margin-top: 32px;
+    font-size: 1.15em;
+    background: linear-gradient(90deg,#ff2323,#e3002c 80%);
+    color: #fff;
+    padding: 14px 38px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 0.12em;
+    box-shadow: 0 4px 24px #ff232355;
+    transition: 0.22s;
+    border: none;
+    outline: none;
+}
+.discord-btn:hover {
+    background: #fff;
+    color: #e3002c;
+    box-shadow: 0 0 30px #ff232388;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    gap: 28px;
+    list-style: none;
+    margin: 50px 0 32px 0;
+    padding: 0;
+}
+
+.nav a {
+    color: #ff2323;
+    background: rgba(255,255,255,0.03);
+    border: 1.5px solid #ff2323;
+    border-radius: 6px;
+    padding: 10px 26px;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 500;
+    letter-spacing: 0.09em;
+    box-shadow: 0 0 8px #ff232355;
+    transition: 0.18s;
+}
+
+.nav a:hover {
+    background: #ff2323;
+    color: #000;
+    box-shadow: 0 0 20px #ff232377;
+}
+
+.footer-text {
+    color: #ff2323cc;
+    font-size: 1em;
+    text-align: center;
+    margin-top: 45px;
+    letter-spacing: 0.12em;
+}
